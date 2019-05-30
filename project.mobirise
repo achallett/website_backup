@@ -30,7 +30,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.9.7",
     "siteFonts": [],
-    "favicon": "@PROJECT_PATH@/assets/images/favicon-128x128.png",
+    "favicon": "@PROJECT_PATH@/assets/images/ic-gyve-launcher-128x128.png",
     "noImageResize": "",
     "uniqCompNum": 16,
     "versionPublish": "4.10.1",
