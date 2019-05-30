@@ -391,9 +391,9 @@
               "size": 0
             }
           },
-          "text1": "<strong>Address</strong><br>86 - 90 Paul St,<br> Hackney,<br> London<br>EC2A 4NE<br>",
+          "text1": "",
           "text2": "<strong>Contacts</strong><br>\nEmail: hello@gyve.to<br>",
-          "text3": "<strong>Links</strong><br>red-mill.co.uk<br>lms.design<br>",
+          "text3": "",
           "_tags": [
             "Theme"
           ],
