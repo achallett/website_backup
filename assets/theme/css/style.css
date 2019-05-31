@@ -452,7 +452,7 @@ a.mbr-iconfont:hover {
 
 p.lead,
 .lead p {
-  font-size: 1.07rem;
+  font-size: 1.250em;
   font-weight: 300;
   margin-bottom: 2.3125rem; }
 
@@ -502,7 +502,7 @@ p.lead,
     white-space: pre-wrap; }
 
 .display-1 {
-  font-size: 4.39rem;
+  font-size: 4.00rem;
   font-weight: 600;
   letter-spacing: -2px;
   margin-bottom: 0.2843em;
@@ -705,8 +705,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #fff;
   font-family: Lora;
   font-size: 1.5rem;
-  font-style: italic;
-  margin-top: -1em; }
+  font-style: italic; }
 .mbr-section-hero .mbr-section-text {
   color: #fff; }
 
@@ -828,6 +827,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   width: 100%; }
   .mbr-figure img, .mbr-figure iframe {
     display: block;
+    object-fit: scale-down;
+    margin-top: 30px;
     width: 100%; }
   .mbr-figure .mbr-figure-caption {
     background: #2e2e2e;
@@ -1256,11 +1257,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding: 0; }
 .mbr-cards .card-img-top {
   border-radius: 0;
+  padding: 0 20px;
   width: auto;
   max-width: 100%; }
 .mbr-cards .card-img + .card-block {
   padding-top: 2.3125rem; }
 .mbr-cards .card-text {
+  padding: 20px;
   margin: 0; }
   .mbr-cards .card-text + .card-btn {
     padding-top: 1.375rem; }
