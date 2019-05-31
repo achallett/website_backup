@@ -6,7 +6,7 @@
       "name": "mobirise3",
       "title": "Mobirise3",
       "styling": {
-        "primaryColor": "#c0a375",
+        "primaryColor": "#efefef",
         "secondaryColor": "#efefef",
         "successColor": "#90a878",
         "infoColor": "#7e9b9f",
@@ -32,7 +32,7 @@
     "siteFonts": [],
     "favicon": "@PROJECT_PATH@/assets/images/ic-gyve-launcher-128x128.png",
     "noImageResize": "",
-    "uniqCompNum": 16,
+    "uniqCompNum": 2,
     "versionPublish": "4.10.1",
     "screenshot": "screenshot.png"
   },
@@ -107,9 +107,9 @@
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "overlay": true,
+            "overlay": false,
             "overlayColor": "#000",
-            "overlayOpacity": 0.5
+            "overlayOpacity": "0"
           },
           "title": "Do you have any spare change?",
           "caption": "<p>Homeless people are seeing a decline in on the street donations due to 2 main reasons:- People are carrying less cash around than ever before and people fear the money may not actually be helping and instead feeding bad habits.</p>",
@@ -171,7 +171,7 @@
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "overlay": true,
+            "overlay": false,
             "overlayColor": "#000",
             "overlayOpacity": 0.5
           },
@@ -327,7 +327,7 @@
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "overlay": true,
+            "overlay": false,
             "overlayColor": "#000",
             "overlayOpacity": 0.5
           },
@@ -364,6 +364,12 @@
           "_anchor": "image1-8"
         },
         {
+          "_inherit": "social-buttons1",
+          "_styles": {
+            ".mbr-section-title, .btn-social": {
+              "color": "#fff"
+            }
+          },
           "_params": {
             "paddingTop": 3,
             "paddingBottom": 3,
@@ -373,38 +379,20 @@
             "bgColorRadio": false,
             "bgColor": "#2e2e2e",
             "overlay": false,
-            "overlayColor": "#3C3C3C",
-            "overlayOpacity": 0.8
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5,
+            "facebook": false,
+            "twitter": false,
+            "google": false,
+            "vkontakte": false,
+            "odnoklassniki": false
           },
-          "logo": {
-            "image": {
-              "src": "@PROJECT_PATH@/assets/images/gyve-logo-large-white-128x128.png",
-              "width": 128,
-              "active": true,
-              "link": "",
-              "alt": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-contacts1",
-              "link": "",
-              "size": 0
-            }
-          },
-          "text1": "",
-          "text2": "<strong>Contacts</strong><br>\nEmail: hello@gyve.to<br>",
-          "text3": "",
           "_tags": [
             "Theme"
           ],
-          "_name": "contacts1",
-          "_anchor": "contacts1-f",
-          "_styles": {
-            "P": {
-              "font-size": "16px",
-              "color": "#ffffff"
-            }
-          }
+          "text": "<a href=\"mailto:hello@gyve.to\" class=\"text-primary\">HELLO@GYVE.TO</a>",
+          "_name": "social-buttons3",
+          "_anchor": "social-buttons3-4"
         }
       ]
     }
