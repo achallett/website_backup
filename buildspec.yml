@@ -6,10 +6,8 @@ env:
 phases:
   build:
     commands:
-      - aws s3 sync . s3://${S3_BUCKET} --acl public --region ${AWS_REGION} --delete
-    finally:
-      - echo This always runs even if the install command fails
+      - aws s3 sync . s3://${S3_BUCKET} --acl public-read --region eu-west-2 --delete
   post_build:
     commands:
-      - aws cloudfront create-invalidation --distribution-id E2J8YFX69AMRUN --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E32V65DYN5IOK4 --paths "/*"
 
