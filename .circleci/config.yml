@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only: gh-pages
+    working_directory: ~/project/
+    docker:
+      - image: circleci/python:2.7-jessie
+    steps:
+      - checkout
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Deploy to S3
+          command: aws s3 sync . s3://gyve.to/ --acl public-read --exclude "*" --include "index.html" --include "assets/*" --delete
+      - run:
+          name: Update Cloudfront CDN
+          command: aws cloudfront create-invalidation --distribution-id E32V65DYN5IOK4 --paths "/*"
