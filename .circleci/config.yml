@@ -1,12 +1,16 @@
-version: 2
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.0
 jobs:
-  deploy:
+  build:
     docker:
-      - image: circleci/python:2.7-jessie
+      - image: 'circleci/python:2.7'
     steps:
-      - run:
-          name: Install awscli
-          command: sudo pip install awscli
-      - run:
-          name: Deploy to S3
-          command: aws s3 sync . s3://gyve.to/ --delete --acl public-read
+      - checkout
+      - aws-s3/sync:
+          from: .
+          to: 's3://gyve.to'
+          arguments: |
+            --acl public-read \
+            --delete
+          overwrite: true
