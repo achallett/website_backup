@@ -2,6 +2,9 @@ version: 2
 jobs:
   # build job omitted for brevity
   deploy:
+    branches:
+      only: gh-pages
+    working_directory: ~/project
     docker:
       - image: circleci/python:2.7-jessie
     steps:
@@ -10,7 +13,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: List folders
-          command: ls -a
+          command: ls
       - run:
           name: Deploy to S3
           command: aws s3 sync . s3://gyve.to/ --delete --acl public-read
@@ -21,5 +24,4 @@ workflows:
     jobs:
       - deploy:
           filters:
-            branches:
-              only: gh-pages
+
